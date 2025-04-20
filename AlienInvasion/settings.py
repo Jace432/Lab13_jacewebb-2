@@ -16,22 +16,31 @@ class Settings:
         self.screen_w  = 1200
         self.screen_h  = 800
         self.FPS       = 60
-        self.bg_file   = Path.cwd() / "Assets" / "images"  / "Namek-png.png"
+        self.bg_file   = Path.cwd() / "AlienInvasion"/ "Assets" / "images"  / "Namek-png.png"
         self.difficulty_scale = 1.1
-        self.scores_file = Path.cwd() / "Assets" / "file" / "scores.json"
+        self.scores_file = Path.cwd() / "AlienInvasion"/"Assets" / "file" / "scores.json"
         
-        self.ship_file  = Path.cwd() / "Assets" / "images" / "goku.png"
+        self.ship_file  = Path.cwd() / "AlienInvasion"/"Assets" / "images" / "goku.png"
         self.ship_w     = 150
         self.ship_h     = 100
 
-        self.bullet_file   = Path.cwd() / "Assets" / "images" / "kame.png"
-        self.laser_sound   = Path.cwd() / "Assets" / "sound" / "kame-sound.mp3"
-        self.impact_sound  = Path.cwd() / "Assets" / "sound" / "explosion-312361.mp3"
+        self.bullet_file   = Path.cwd() /"AlienInvasion"/ "Assets" / "images" / "kame.png"
+        self.laser_sound   = Path.cwd() / "AlienInvasion"/"Assets" / "sound" / "kame-sound.mp3"
+        self.impact_sound  = Path.cwd() / "AlienInvasion"/"Assets" / "sound" / "explosion-312361.mp3"
 
-        self.alien_file  = Path.cwd() / "Assets" / "images" / "kindpng_1560246.png"
+        self.alien_file  = Path.cwd() / "AlienInvasion"/"Assets" / "images" / "kindpng_1560246.png"
         self.alien_w          = 40
         self.alien_h          = 40
         self.fleet_direction  = 1
+
+        self.button_w     = 200
+        self.button_h     = 50
+        self.button_color = (0, 135, 50)
+
+        self.text_color = (255, 255, 255)
+        self.button_font_size = 48 
+        self.HUD_font_size = 20
+        self.font_file = Path.cwd() /"AlienInvasion"/ "Assets" / "Fonts" / "SignikaNegative-Medium.ttf"
         
     def initialize_dynamic_settings(self):
         """Initializes the dynamic settings"""
