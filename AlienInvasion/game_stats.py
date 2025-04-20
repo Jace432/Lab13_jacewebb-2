@@ -1,7 +1,8 @@
 """
 Provides Game Stats Class for Alien Invasion game.
 
-Manages the current stats of the game: amount of lives.
+Manages the current stats of the game: amount of lives, high score, max score,
+current score, and current level.
 """
 
 import json
